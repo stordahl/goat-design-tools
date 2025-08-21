@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "goat-design-tools",
+  "compatibility_date": "2024-04-01",
+  "compatibility_flags": [
+    "nodejs_compat_v2"
+  ],
+  "main": "./src/index.tsx",
+  "assets": {
+    "directory": "./dist"
+  }
+}
