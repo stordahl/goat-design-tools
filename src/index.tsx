@@ -15,7 +15,6 @@ async function loadToolsForCategory(category: string) {
   }
 }
 
-// Helper function to capitalize category names
 function capitalize(str: string) {
   return str.charAt(0).toUpperCase() + str.slice(1)
 }
@@ -23,22 +22,22 @@ function capitalize(str: string) {
 app.get('/', (c) => {
   // For now, we'll hardcode the known categories since Vite can't dynamically discover files at runtime
   // This could be improved by generating this list at build time
-  const categories = ['typography', 'color']
+  const categories = ['color', 'graphics', 'icons', 'image', 'inspiration', 'typography']
   
   return c.render(
-    <div>
-      <h1>Design Tools</h1>
-      <p>Browse our collection of design tools by category:</p>
-      <ul>
+      <div class="flex flex-col gap-5">
         {categories.map((category) => (
-          <li key={category}>
-            <a href={`/${category}`}>
-              <h2>{capitalize(category)} Tools</h2>
-            </a>
-          </li>
+          <a
+            key={category}
+            href={`/${category}`}
+            class="group peer block p-6 transition-all duration-300 border-3 border-dashed border-neutral-500 hover:border-red-500 peer-hover:border-neutral-600 peer-hover:text-neutral-600 has-[~:hover]:border-neutral-600 has-[~:hover]:text-neutral-600 text-neutral-500 text-5xl motion-safe:hover:tracking-widest overflow-hidden"
+          >
+            <h2 class="font-semibold whitespace-nowrap">
+              {[...Array(6)].map((_, i) => <span key={i} className="group-hover:first:text-red-500 group-hover:not-first:text-neutral-600">{capitalize(category)} </span>)}
+            </h2>
+          </a>
         ))}
-      </ul>
-    </div>
+      </div>
   )
 })
 
@@ -52,67 +51,47 @@ app.get('/:category', async (c) => {
   }
   
   return c.render(
-    <div>
-      <h1>{capitalize(category)} Tools</h1>
-      <ul>
+    <div class="space-y-8">
+      <div>
+        <a 
+          href="/" 
+          class="inline-flex items-center text-neutral-400 hover:text-red-500 mb-6 transition-colors"
+        >
+          ‹ back
+        </a>
+        <h1 class="text-3xl font-bold text-neutral-50 mb-2">
+          {capitalize(category)} Tools
+        </h1>
+      </div>
+      
+      <div class="grid gap-6">
         {tools.map((tool: any) => (
-          <li key={tool.slug}>
-            <a href={`/${category}/${tool.slug}`}>
-              <h2>{tool.name}</h2>
-              <p>{tool.description}</p>
-              <div>
-                {tool.tags.map((tag: string) => (
-                  <span key={tag} style={{ marginRight: '8px', padding: '2px 6px', backgroundColor: '#f0f0f0', borderRadius: '3px' }}>
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </a>
-          </li>
+          <a
+            key={tool.slug}
+            href={tool.url} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="group block p-6 w-full h-auto transition-all duration-300 border-3 border-dashed border-neutral-500 hover:border-red-500 text-neutral-400 hover:text-red-500"
+          >
+            <h2 class="text-3xl font-semibold mb-3 duration-300">
+              {tool.name}
+            </h2>
+            <p class="transition-colors text-neutral-500 group-hover:text-neutral-300 mb-4 leading-relaxed">
+              {tool.description}
+            </p>
+            <div class="flex flex-wrap gap-2">
+              {tool.tags.map((tag: string, index: number) => (
+                <span 
+                  key={tag} 
+                  class="transition-colors text-neutral-500 group-hover:text-neutral-400 text-sm font-medium"
+                >
+                  {tag}
+                  {(index < (tool.tags.length - 1)) && " \\"}
+                </span>
+              ))}
+            </div>
+          </a>
         ))}
-      </ul>
-      <div style={{ marginTop: '24px' }}>
-        <a href="/">← Back to All Categories</a>
-      </div>
-    </div>
-  )
-})
-
-// Dynamic individual tool route
-app.get('/:category/:slug', async (c) => {
-  const category = c.req.param('category')
-  const slug = c.req.param('slug')
-  const tools = await loadToolsForCategory(category)
-  
-  if (!tools) {
-    return c.notFound()
-  }
-  
-  const tool = tools.find((t: any) => t.slug === slug)
-  
-  if (!tool) {
-    return c.notFound()
-  }
-  
-  return c.render(
-    <div>
-      <h1>{tool.name}</h1>
-      <p>{tool.description}</p>
-      <a href={tool.url} target="_blank" rel="noopener noreferrer">
-        Visit Tool →
-      </a>
-      <div style={{ marginTop: '16px' }}>
-        <strong>Tags:</strong>
-        <div style={{ marginTop: '8px' }}>
-          {tool.tags.map((tag: string) => (
-            <span key={tag} style={{ marginRight: '8px', padding: '4px 8px', backgroundColor: '#f0f0f0', borderRadius: '4px' }}>
-              {tag}
-            </span>
-          ))}
-        </div>
-      </div>
-      <div style={{ marginTop: '24px' }}>
-        <a href={`/${category}`}>← Back to {capitalize(category)} Tools</a>
       </div>
     </div>
   )

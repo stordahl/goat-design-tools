@@ -4,6 +4,84 @@
     "slug": "font-share",
     "description": "Fontshare is a free fonts service from the Indian Type Foundry (ITF), making quality fonts accessible to all.",
     "url": "https://www.fontshare.com/",
-    "tags": ["fonts", "web fonts", "open source", "typography"]
+    "tags": [
+      "fonts",
+      "web fonts",
+      "open source",
+      "typography"
+    ]
+  },
+  {
+    "name": "Typescale",
+    "slug": "typescale",
+    "description": "Create a scaled type system with your fonts",
+    "url": "https://typescale.com/",
+    "tags": [
+      "typography",
+      "system"
+    ]
+  },
+  {
+    "name": "Font Brief",
+    "slug": "font-brief",
+    "description": "Find fonts by personality",
+    "url": "https://www.fontbrief.com",
+    "tags": [
+      "discovery",
+      "web fonts",
+      "typography"
+    ]
+  },
+  {
+    "name": "Fonts Ninja",
+    "slug": "fonts-ninja",
+    "description": "Fonts Ninja helps designers discover awesome fonts and create stunning designs. Explore thousands of fonts and download them for free or buy premium ones.",
+    "url": "https://fonts.ninja/",
+    "tags": [
+      "typography"
+    ]
+  },
+  {
+    "name": "Font Mojo",
+    "slug": "font-mojo",
+    "description": "Fontmojo is a simple app to preview, compare, and organize fonts.",
+    "url": "https://fontmojo.com/",
+    "tags": [
+      "typography",
+      "system"
+    ]
+  },
+  {
+    "name": "Open Foundry",
+    "slug": "open-foundry",
+    "description": "A new platform for open-source fonts in a noise-free environment, to highlight their beauty, extend functionality and encourage further exploration.",
+    "url": "https://open-foundry.com/",
+    "tags": [
+      "typography",
+      "curated",
+      "open source"
+    ]
+  },
+  {
+    "name": "Use & Modify",
+    "slug": "use-modify",
+    "description": "a personal selection of beautiful, classy, punk, professional, incomplete, weird typefaces. Open source licenses make them free to use and modify. This selection is the result of deep search and crushes.",
+    "url": "https://usemodify.com/",
+    "tags": [
+      "typography",
+      "curated",
+      "open source"
+    ]
+  },
+  {
+    "name": "SPACE TYPE GENERATOR",
+    "slug": "space-type-generator",
+    "description": "Generate 3D text effects in the browser",
+    "url": "https://spacetypegenerator.com/",
+    "tags": [
+      "typography",
+      "generator",
+      "3D"
+    ]
   }
 ]

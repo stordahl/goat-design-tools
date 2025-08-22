@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Grid Paint",
+    "slug": "grid-paint",
+    "description": "Free-to-use custom programmed grid paint tool. Paint as freely as the grid allows it.",
+    "url": "https://schultzschultz.com/tools/gridpaint",
+    "tags": [
+      "graphics"
+    ]
+  },
+  {
+    "name": "Handy Arrows",
+    "slug": "handy-arrows",
+    "description": "A collection of hand-drawn arrows, doodles, and infographic elements for your next project.",
+    "url": "https://handyarrows.com/",
+    "tags": [
+      "illustration"
+    ]
+  },
+  {
+    "name": "Grainient.supply",
+    "slug": "grainientsupply",
+    "description": "Grainient offers 1000+ awesome gradients, noisy textured, and AI-generated backgrounds. Subscribe for unlimited downloads and elevate your designs with our premium collection.",
+    "url": "https://grainient.supply/",
+    "tags": [
+      "inspiration",
+      "ai"
+    ]
+  },
+  {
+    "name": "Durves",
+    "slug": "durves",
+    "description": "A tool for creating and exporting dot patterns for graphic designers, UI/UX, and other visual professionals.",
+    "url": "https://www.durves.com/",
+    "tags": [
+      "generator"
+    ]
+  },
+  {
+    "name": "TextBehindImage",
+    "slug": "textbehindimage",
+    "description": "Create stunning text-behind-photo designs instantly with our free online tool. Add text behind images easily - no signup required. Automatic background removal.",
+    "url": "https://textbehindimage.com/",
+    "tags": [
+      "graphics",
+      "images",
+      "typography"
+    ]
+  },
+  {
+    "name": "Open Source SVG Loading Icons",
+    "slug": "open-source-svg-loading-icons",
+    "description": "Collection of 100+ Open Source SVG-based icons you can use to show content is being loaded. Absolutely free with no attribution required.",
+    "url": "https://magecdn.com/tools/svg-loaders",
+    "tags": [
+      "icons",
+      "animation",
+      "web design",
+      "curated"
+    ]
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "name": "One Page Love",
+    "slug": "one-page-love",
+    "description": "One Page Love is a One Page website design gallery showcasing the best Single Page websites, templates and resources.",
+    "url": "https://onepagelove.com/",
+    "tags": [
+      "inspiration",
+      "curation"
+    ]
+  },
+  {
+    "name": "Dribbble",
+    "slug": "dribbble",
+    "description": "Find Top Designers &amp; Creative Professionals on Dribbble. We are where designers gain inspiration, feedback, community, and jobs. Your best resource to discover and connect with designers worldwide.",
+    "url": "https://dribbble.com/",
+    "tags": [
+      "design",
+      "inspiration"
+    ]
+  },
+  {
+    "name": "Brand Archive",
+    "slug": "brand-archive",
+    "description": "Super-power your brand research with Brand Archive. Discover logos, art direction and fonts from hundreds of brands past and present.",
+    "url": "https://brandarchive.xyz",
+    "tags": [
+      "design",
+      "branding",
+      "inspiration",
+      "curated"
+    ]
+  },
+  {
+    "name": "Ecommier",
+    "slug": "ecommier",
+    "description": "Ecommier brings you a handpicked selection of the finest online stores. Discover best looking ecommerce websites from across the globe in our curated collection",
+    "url": "https://ecommier.com/",
+    "tags": [
+      "inspiration",
+      "e-commerce",
+      "curated"
+    ]
+  },
+  {
+    "name": "Supahero",
+    "slug": "supahero",
+    "description": "Explore a handpicked library of stunning website hero sections designed to captivate and engage. Discover inspiring, high-quality hero designs for every niche and style—perfect for elevating your next web project.",
+    "url": "https://www.supahero.io/",
+    "tags": [
+      "web design",
+      "inspiration"
+    ]
+  },
+  {
+    "name": "cta.gallery",
+    "slug": "ctagallery",
+    "description": "The best call-to-action inspiration for designers",
+    "url": "https://www.cta.gallery/",
+    "tags": [
+      "web design",
+      "inspiration",
+      "curated"
+    ]
+  },
+  {
+    "name": "404s.design",
+    "slug": "404sdesign",
+    "description": "A curated gallery of creative error page designs",
+    "url": "https://www.404s.design/",
+    "tags": [
+      "inspiration",
+      "curated"
+    ]
+  },
+  {
+    "name": "OGFolio",
+    "slug": "ogfolio",
+    "description": "A curated gallery of high-quality Open Graph images from top websites. Browse by theme, color, or industry to get inspired and level up your link previews.",
+    "url": "https://ogfolio.com/",
+    "tags": [
+      "inspiration",
+      "web design"
+    ]
+  },
+  {
+    "name": "iOS Icon Gallery",
+    "slug": "ios-icon-gallery",
+    "description": "Showcasing beautiful icon designs from the iOS App Store",
+    "url": "https://www.iosicongallery.com/",
+    "tags": [
+      "inspiration",
+      "icons"
+    ]
+  },
+  {
+    "name": "Adfolio",
+    "slug": "adfolio",
+    "description": "Curated B2B ads for design & copy inspiration. Hand-picked Meta & LinkedIn ads explained.",
+    "url": "https://www.adfolio.design/",
+    "tags": [
+      "inspiration",
+      "curated"
+    ]
+  },
+  {
+    "name": "Cosmos",
+    "slug": "cosmos",
+    "description": "Your universe of inspiration.",
+    "url": "https://www.cosmos.so/",
+    "tags": [
+      "library",
+      "curated"
+    ]
+  },
+  {
+    "name": "same.energy",
+    "slug": "sameenergy",
+    "description": "Find beautiful images.",
+    "url": "https://same.energy/",
+    "tags": [
+      "inspiration",
+      "discovery",
+      "images"
+    ]
+  }
+]

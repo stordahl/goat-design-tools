@@ -1,3 +1,7 @@
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
+@import "tailwindcss";
+
+@config "../tailwind.config.js";
+
+@theme {
+  --font-sans: "Comico", sans-serif;
 }

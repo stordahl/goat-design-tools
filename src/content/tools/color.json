@@ -9,5 +9,38 @@
       "gradient",
       "generator"
     ]
+  },
+  {
+    "name": "ColorMagic",
+    "slug": "colormagic",
+    "description": "Create beautiful color palettes with our free AI color palette generator. Generate color palettes from names, images, text, or hex codes in seconds!",
+    "url": "https://colormagic.app/",
+    "tags": [
+      "color",
+      "palette",
+      "generator",
+      "ai",
+      "contrast"
+    ]
+  },
+  {
+    "name": "gradient.style",
+    "slug": "gradientstyle",
+    "description": "Wide gamut Color 4 compliant CSS gradient builder.",
+    "url": "https://gradient.style",
+    "tags": [
+      "gradient",
+      "generator"
+    ]
+  },
+  {
+    "name": "InclusiveColors",
+    "slug": "inclusivecolors",
+    "description": "Create custom palettes of multiple color swatches: full control of hue/saturation/lightness curves, check WCAG/APCA contrast, export to Tailwind/Figma/Adobe",
+    "url": "https://www.inclusivecolors.com",
+    "tags": [
+      "color",
+      "a11y"
+    ]
   }
 ]

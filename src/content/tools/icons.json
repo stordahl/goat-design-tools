@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Lucide",
+    "slug": "lucide",
+    "description": "Beautiful & consistent icon toolkit made by the community.",
+    "url": "https://lucide.dev/icons/",
+    "tags": [
+      "icons",
+      "open source",
+      "svg"
+    ]
+  },
+  {
+    "name": "Isocons",
+    "slug": "isocons",
+    "description": "Carefully crafted isometric icons.",
+    "url": "https://www.isocons.app/",
+    "tags": [
+      "icons",
+      "isometric"
+    ]
+  }
+]
