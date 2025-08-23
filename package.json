@@ -3,9 +3,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && vite build --ssr",
-    "preview": "$npm_execpath run build && wrangler dev dist-server/index.js",
-    "deploy": "$npm_execpath run build && wrangler deploy dist-server/index.js",
+    "build": "NODE_ENV='production' vite build && vite build --ssr && cp -R ./src/content ./dist",
+    "preview": "$npm_execpath run build && wrangler dev dist/index.js",
+    "deploy": "$npm_execpath run build && wrangler deploy dist/index.js",
     "tools": "node cli.js"
   },
   "dependencies": {

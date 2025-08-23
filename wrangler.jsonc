@@ -8,5 +8,9 @@
   "main": "./src/index.tsx",
   "assets": {
     "directory": "./dist"
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
   }
 }
