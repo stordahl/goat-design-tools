@@ -20,6 +20,6 @@ export default defineConfig(({ command, isSsrBuild }) => {
     }
   }
   return {
-    plugins: [build({ outputDir: 'dist', emptyOutDir: false })],
+    plugins: [build({ outputDir: 'dist-server', emptyOutDir: false })],
   }
 })
