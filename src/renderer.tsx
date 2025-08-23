@@ -24,7 +24,7 @@ export const renderer = jsxRenderer(({ children }) => {
       <body class="bg-neutral-950 text-neutral-50 min-h-screen bg-[url(/images/bg-texture.jpg)]">
         <div class="container mx-auto max-w-4xl px-4 py-8">
           <div class="space-y-8 flex flex-col">
-            <header class="text-center">
+            <header class="text-center" style={{'view-transition-name': 'header'}}>
               <img src="/images/logo.png" alt="" class="max-w-70 m-auto"/>
               <h1 class="text-4xl font-bold text-neutral-50 mb-1">G.O.A.T. Design Tools</h1>
               <p class="text-lg text-neutral-500 max-w-2xl mx-auto">

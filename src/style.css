@@ -5,3 +5,7 @@
 @theme {
   --font-sans: "Comico", sans-serif;
 }
+
+@view-transition {
+  navigation: auto;
+}

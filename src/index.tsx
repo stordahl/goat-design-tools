@@ -30,10 +30,10 @@ app.get('/', (c) => {
           <a
             key={category}
             href={`/${category}`}
-            class="group peer block p-6 transition-all duration-300 border-3 border-dashed border-neutral-500 hover:border-red-500 peer-hover:border-neutral-600 peer-hover:text-neutral-600 has-[~:hover]:border-neutral-600 has-[~:hover]:text-neutral-600 text-neutral-500 text-5xl motion-safe:hover:tracking-widest overflow-hidden"
+            class="group peer block p-6 transition-all duration-300 border-3 border-dashed border-neutral-600 hover:border-red-500 text-neutral-600 text-5xl motion-safe:hover:tracking-widest overflow-hidden"
           >
-            <h2 class="font-semibold whitespace-nowrap">
-              {[...Array(6)].map((_, i) => <span key={i} className="group-hover:first:text-red-500 group-hover:not-first:text-neutral-600">{capitalize(category)} </span>)}
+            <h2 class="text-center font-semibold whitespace-nowrap text-neutral-600 group-hover:first:text-red-500 group-hover:not-first:text-neutral-600">
+              {capitalize(category)}
             </h2>
           </a>
         ))}
