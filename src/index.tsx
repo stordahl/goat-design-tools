@@ -62,28 +62,40 @@ app.get('/:category', async (c) => {
         <h1 class="text-3xl font-bold text-neutral-50 mb-2">
           {capitalize(category)} Tools
         </h1>
+        
+        <div class="mt-6">
+          <input
+            type="text"
+            id="search-input"
+            placeholder={`Search ${category} tools...`}
+            class="w-full p-3 border-3 border-dashed border-neutral-600 text-neutral-200 placeholder-neutral-500 focus:border-red-500 focus:outline-none transition-colors"
+          />
+        </div>
       </div>
       
-      <div class="grid gap-6">
+      <div id="tools-container" class="grid gap-6">
         {tools.map((tool: any) => (
           <a
             key={tool.slug}
             href={tool.url} 
             target="_blank" 
             rel="noopener noreferrer"
-            class="group block p-6 w-full h-auto transition-all duration-300 border-3 border-dashed border-neutral-500 hover:border-red-500 text-neutral-400 hover:text-red-500"
+            class="tool-item group block p-6 w-full h-auto transition-all duration-300 border-3 border-dashed border-neutral-600 hover:border-red-500 text-neutral-600 hover:text-red-500"
+            data-name={tool.name.toLowerCase()}
+            data-description={tool.description.toLowerCase()}
+            data-tags={tool.tags.join(' ').toLowerCase()}
           >
             <h2 class="text-3xl font-semibold mb-3 duration-300">
               {tool.name}
             </h2>
-            <p class="transition-colors text-neutral-500 group-hover:text-neutral-300 mb-4 leading-relaxed">
+            <p class="transition-colors text-neutral-600 group-hover:text-neutral-300 mb-4 leading-relaxed">
               {tool.description}
             </p>
             <div class="flex flex-wrap gap-2">
               {tool.tags.map((tag: string, index: number) => (
                 <span 
                   key={tag} 
-                  class="transition-colors text-neutral-500 group-hover:text-neutral-400 text-sm font-medium"
+                  class="transition-colors text-neutral-600 group-hover:text-neutral-400 text-sm font-medium"
                 >
                   {tag}
                   {(index < (tool.tags.length - 1)) && " \\"}
@@ -93,6 +105,12 @@ app.get('/:category', async (c) => {
           </a>
         ))}
       </div>
+
+      <div id="no-results" class="hidden text-center py-12">
+        <p class="text-neutral-500 text-lg">No tools found matching your search.</p>
+      </div>
+
+      <script src={import.meta.env.PROD ? `/assets/search.js` : `/src/search.js`} />
     </div>
   )
 })

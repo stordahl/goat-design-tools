@@ -11,7 +11,7 @@ export default defineConfig(({ command, isSsrBuild }) => {
     return {
       build: {
         rollupOptions: {
-          input: ['./src/style.css'],
+          input: ['./src/style.css', './src/search.js'],
           output: {
             assetFileNames: 'assets/[name].[ext]'
           }
