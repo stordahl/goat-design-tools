@@ -2,8 +2,28 @@
 
 @config "../tailwind.config.js";
 
+/**
+* @license
+*
+* Font Family: Comico
+* Designed by: Frode Helland
+* URL: https://www.fontshare.com/fonts/comico
+* © 2025 Indian Type Foundry
+*
+* Comico Regular 
+
+*
+*/
+@font-face {
+  font-family: 'Comico-Regular';
+  src: url('/fonts/Comico-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
 @theme {
-  --font-sans: "Comico", sans-serif;
+  --font-sans: "Comico-Regular", sans-serif;
 }
 
 @view-transition {
