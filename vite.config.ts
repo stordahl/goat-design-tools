@@ -1,5 +1,6 @@
 import { cloudflare } from '@cloudflare/vite-plugin'
 import build from '@hono/vite-build/cloudflare-workers'
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 import { defineConfig } from 'vite'
 import ssrHotReload from 'vite-plugin-ssr-hot-reload'
 
@@ -20,6 +21,9 @@ export default defineConfig(({ command, isSsrBuild }) => {
     }
   }
   return {
-    plugins: [build({ outputDir: 'dist-server', emptyOutDir: false })],
+    plugins: [
+      build({ outputDir: 'dist-server', emptyOutDir: false }),
+      ViteImageOptimizer(),
+    ],
   }
 })

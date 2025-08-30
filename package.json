@@ -20,8 +20,10 @@
     "@types/node": "^24.3.0",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
+    "sharp": "^0.34.3",
     "tailwindcss": "^4.1.12",
     "vite": "^6.1.1",
+    "vite-plugin-image-optimizer": "^2.0.2",
     "vite-plugin-ssr-hot-reload": "^0.4.1",
     "wrangler": "^4.4.0"
   }
