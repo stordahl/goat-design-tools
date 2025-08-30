@@ -7,6 +7,14 @@ export const renderer = jsxRenderer(({ children }) => {
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>GOAT Design Tools</title>
+        <meta property="og:title" content="GOAT Design Tools" />
+        <meta property="og:description" content="Free online tools for designers and creatives" />
+        <meta property="og:image" content="/images/og.png" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="GOAT Design Tools" />
+        <meta name="twitter:description" content="Free online tools for designers and creatives" />
+        <meta name="twitter:image" content="/images/og.png" />
         <style>
           {`a {
               color: var(--color-neutral-500);
