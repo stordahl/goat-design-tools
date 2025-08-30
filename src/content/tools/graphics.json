@@ -58,5 +58,36 @@
       "web design",
       "curated"
     ]
+  },
+  {
+    "name": "Penpot",
+    "slug": "penpot",
+    "description": "Penpot is the open-source free design software that connects designers and developers with no handoff drama. Prototyping, UI design and code - all in one app.",
+    "url": "https://penpot.app/",
+    "tags": [
+      "design",
+      "ui"
+    ]
+  },
+  {
+    "name": "Maneken",
+    "slug": "maneken",
+    "description": "Product mockups in the browser",
+    "url": "https://maneken.app/",
+    "tags": [
+      "design",
+      "3D",
+      "mockup"
+    ]
+  },
+  {
+    "name": "Texturelabs",
+    "slug": "texturelabs",
+    "description": "Texturelabs is an online resource for free, original textures and tutorials for art and design.",
+    "url": "https://texturelabs.org/",
+    "tags": [
+      "design",
+      "texture"
+    ]
   }
 ]
