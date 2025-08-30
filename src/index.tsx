@@ -1,6 +1,14 @@
 import { Hono } from 'hono'
 import { renderer } from './renderer'
 
+type Tool = {
+  name: string;
+  slug: string,
+  description: string,
+  url: string,
+  tags: string[];
+}
+
 const app = new Hono()
 
 app.use(renderer)
@@ -9,7 +17,7 @@ app.use(renderer)
 async function loadToolsForCategory(category: string) {
   try {
     const module = await import(`./content/tools/${category}.json`)
-    return module.default
+    return module.default as Tool[]
   } catch (error) {
     return null
   }
@@ -38,7 +46,7 @@ app.get('/', (c) => {
             <h2 class="text-center font-semibold whitespace-nowrap text-neutral-600 group-hover:text-red-500">
               {capitalize(category)}
             </h2>
-            <img src={`/images/${icons[index] ?? icons[0]}.png`} alt="" className="transition-rotate duration-300 w-10 h-10 aspect-square rotate-10 group-hover:rotate-none"/>
+            <img src={`/images/${icons[index] ?? icons[0]}.png`} alt="" className="transition-rotate scale-x-[-1] duration-300 w-10 h-10 aspect-square rotate-10 group-hover:rotate-none"/>
           </a>
         ))}
       </div>
@@ -48,11 +56,13 @@ app.get('/', (c) => {
 // Dynamic category listing route
 app.get('/:category', async (c) => {
   const category = c.req.param('category')
-  const tools = await loadToolsForCategory(category)
+  const rawTools = await loadToolsForCategory(category)
   
-  if (!tools) {
+  if (!rawTools) {
     return c.notFound()
   }
+
+  const tools = rawTools.sort((a, b) => a.name.localeCompare(b.name))
   
   return c.render(
     <div class="space-y-8">
