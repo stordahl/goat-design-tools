@@ -47,6 +47,7 @@ export const renderer = jsxRenderer(({ children }) => {
             </footer>
           </div>
         </div>
+        <script id="counterscale-script" src="https://tracking.hacksaw.software/tracker.js" defer data-site-id="goat"></script>
       </body>
     </html>
   )
